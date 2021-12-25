@@ -6,14 +6,17 @@ import Ina from "../../Assets/ina.png";
 import En from "../../Assets/en.png";
 import Fl from "../../Assets/fl.png";
 import Lb from "../../Assets/lb.png";
+import { useTranslation } from "react-i18next";
+import i18n from "i18next";
 
 const Header = () => {
   const [isOpenSSl, setIsOpenSsl] = useState<boolean>(false);
   const [isOpenLang, setIsOpenLang] = useState<boolean>(false);
   const route = useLocation();
+  const { t } = useTranslation();
   return (
     <div className="w-full overflow-hidden top-0 shadow-md py-3 px-28 border-b border-gray-300 bg-white flex justify-between items-center">
-      <div className="text-3xl font-medium tracking-wide">Social Studies</div>
+      <div className="text-3xl font-medium tracking-wide">{t("title")}</div>
       <div className="flex gap-x-10 font-medium text-gray-600">
         <Link to={"/"}>
           <div
@@ -21,7 +24,7 @@ const Header = () => {
               route.pathname === "/" ? "text-green-600" : "text-gray-700"
             } hover:text-green-600 transition-all duration-500 hover:shadow-lg`}
           >
-            Home
+            {t('home')}
           </div>
         </Link>
         <Link to={"/about"}>
@@ -30,7 +33,7 @@ const Header = () => {
               route.pathname === "/about" ? "text-green-600" : "text-gray-700"
             } hover:text-green-600 transition-all duration-500 hover:shadow-lg`}
           >
-            About
+            {t('about')}
           </div>
         </Link>
         <div onMouseLeave={() => setIsOpenSsl(false)}>
@@ -39,7 +42,7 @@ const Header = () => {
             className="flex space-x-2 items-center"
           >
             <div className="cursor-pointer hover:text-green-600 transition-all duration-500 hover:shadow-lg">
-              Social Studies Lessons
+             {t('ssl')}
             </div>
             <img
               src={ArrowDown}
@@ -60,7 +63,7 @@ const Header = () => {
                     : "text-gray-700"
                 } hover:text-green-600 transition-all duration-500 hover:shadow-lg`}
               >
-                Social Studies Lessons (Indonesia)
+                {t('ssl_ina')}
               </div>
             </Link>
             <Link to={"/ssl-libya"}>
@@ -71,7 +74,7 @@ const Header = () => {
                     : "text-gray-700"
                 } hover:text-green-600 transition-all duration-500 hover:shadow-lg`}
               >
-                Social Studies Lessons (Libya)
+                {t('ssl_ar')}
               </div>
             </Link>
             <Link to={"/ssl-finlandia"}>
@@ -82,22 +85,21 @@ const Header = () => {
                     : "text-gray-700"
                 } hover:text-green-600 transition-all duration-500 hover:shadow-lg`}
               >
-                Social Studies Lessons (Finlandia)
+                {t('ssl_fl')}
               </div>
             </Link>
           </div>
         </div>
 
-        <div className="flex flex-row items-center" onMouseLeave={() => setIsOpenLang(false)}>
+        <div
+          className="flex flex-row items-center"
+          onMouseLeave={() => setIsOpenLang(false)}
+        >
           <div
             onMouseEnter={() => setIsOpenLang(true)}
             className="flex space-x-2 items-center"
           >
-            <img
-              src={Globe}
-              alt="globe"
-              className={`w-5`}
-            />
+            <img src={Globe} alt="globe" className={`w-5`} />
             <img
               src={ArrowDown}
               alt="arrow"
@@ -109,12 +111,14 @@ const Header = () => {
               !isOpenLang && "hidden"
             }`}
           >
-             <img
+            <img
+              onClick={() => i18n.changeLanguage("in")}
               src={Ina}
               alt="ina"
               className={`w-10 cursor-pointer border`}
             />
             <img
+              onClick={() => i18n.changeLanguage("en")}
               src={En}
               alt="ina"
               className={`w-10 cursor-pointer border`}
@@ -122,16 +126,17 @@ const Header = () => {
             <img
               src={Lb}
               alt="ina"
+              onClick={() => i18n.changeLanguage("ar")}
               className={`w-10 cursor-pointer border`}
             />
             <img
               src={Fl}
               alt="ina"
+              onClick={() => i18n.changeLanguage("fl")}
               className={`w-10 cursor-pointer border`}
             />
           </div>
         </div>
-        
       </div>
     </div>
   );

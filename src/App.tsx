@@ -50,7 +50,7 @@ const routes = [
 const App: React.FC = ({ children }) => {
   return (
     <BrowserRouter>
-    <Header />
+      <Header />
       <Routes>
         {routes.map((route) => (
           <Route key={route.id} path={route.path} element={route.component} />
