@@ -5,5 +5,18 @@
     "title": "Yhteiskuntaoppia",
     "ssl_ina": "Yhteiskuntatieteiden oppitunnit (Indonesia)",
     "ssl_fl": "Yhteiskuntatieteiden oppitunnit (Finlandia)",
-    "ssl_ar": "Yhteiskuntatieteiden oppitunnit (Libya)"
+    "ssl_ar": "Yhteiskuntatieteiden oppitunnit (Libya)",
+    "home_main_title": "Sosiaalitutkimus verkkopohjaisella projektimallilla Nuoremmalle lukiolle",
+    "get_started":"ALOITTAA",
+    "home_title":"Sosiaalitutkimus verkkopohjaisella projektimallilla Nuoremmalle lukiolle",
+    "home_content":"Sosiaalitutkimukset tarkastelevat ihmisyhteiskunnan eri aloja, ja kun navigoimme tässä globaalissa pandemiassa, olemme nähneet historian tärkeitä hetkiä. Miksi et käyttäisi tätä tilaisuutta kannustaaksemme lapsiamme ja oppilaitamme tutkimaan ihmiskuntaa? Opitpa verkossa tai henkilökohtaisesti, tämä luettelo parhaista yhteiskuntatieteellisistä verkkosivustoista auttaa sinua luomaan informatiivisia, hauskoja ja interaktiivisia oppitunteja.",
+    "home_sub_title":"YHTEISKUNTATIETEIDEN OPPITUNNIT",
+    "home_sub_content": "Sosiaalitutkimus on materiaali, joka käyttää yhteiskuntatieteellisiä materiaaleja tutkiakseen ihmissuhteita yhteiskunnassa ja ihmisiä yhteiskunnan jäseninä.",
+    "about_button": "Opitaan",
+    "about_title": "Tietoja verkkosivustosta",
+    "about_content_1":"Mikä on tämän verkkosivuston käyttö?",
+    "about_content_1_desc":"Tätä verkkosivustoa käytetään oppimis- ja opetusprosesseissa, jotka koskevat toimitettujen materiaalien esittelyä ja yleiskatsausta kolmesta maasta hankittuihin materiaaleihin kerralla.",
+    "about_content_2":"Sitten?",
+    "about_content_2_desc":"Tällä verkkosivustolla opiskelijoille esitellään myös virtuaalimuseomuseo. Nyt täällä opiskelijat kutsutaan matkustamaan menemättä suoraan tutkittavaan paikkaan, josta on 360 asteen näkymä.",
+    "gallery":"Galleria"
 }

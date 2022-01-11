@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import NotFound from "./Pages/404";
 import About from "./Pages/About";
@@ -50,12 +51,15 @@ const routes = [
 const App: React.FC = ({ children }) => {
   return (
     <BrowserRouter>
-      <Header />
+      <div className="top-0 z-30 fixed w-full">
+        <Header />
+      </div>
       <Routes>
         {routes.map((route) => (
           <Route key={route.id} path={route.path} element={route.component} />
         ))}
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };

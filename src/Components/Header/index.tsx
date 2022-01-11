@@ -27,7 +27,7 @@ const Header = () => {
             {t('home')}
           </div>
         </Link>
-        <Link to={"/about"}>
+        {/* <Link to={"/about"}>
           <div
             className={`cursor-pointer ${
               route.pathname === "/about" ? "text-green-600" : "text-gray-700"
@@ -35,7 +35,7 @@ const Header = () => {
           >
             {t('about')}
           </div>
-        </Link>
+        </Link> */}
         <div onMouseLeave={() => setIsOpenSsl(false)}>
           <div
             onMouseEnter={() => setIsOpenSsl(true)}
