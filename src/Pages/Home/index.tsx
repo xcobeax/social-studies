@@ -34,7 +34,7 @@ const Home: React.FC = () => {
     if (isViewerOpen) {
       document.body.style.overflowY = "hidden";
     } else {
-      document.body.style.overflowY = "scroll";
+      document.body.style.overflowY = "auto";
     }
   }, [isViewerOpen]);
 
@@ -112,7 +112,7 @@ const Home: React.FC = () => {
               className="relative z-10 hover:scale-105 duration-300 cursor-pointer"
               key={e.id}
             >
-              <img src={e.image} alt={`img-${e.id}`} />
+              <img src={require(`../../Assets/${e.image}`)} alt={`img-${e.id}`} />
               <div className="absolute inset-0 bg-black bg-opacity-10">
                 <div className="text-white bg-gray-600 bg-opacity-50 p-2 bottom-0 w-full absolute">
                   <div className="text-sm text-gray-200 tracking-wide">
@@ -129,7 +129,7 @@ const Home: React.FC = () => {
           {isViewerOpen && (
             <div className="z-40">
               <ImageViewer
-                src={images.map((e) => e.image)}
+                src={images.map((e) => require(`../../Assets/${e.image}`))}
                 currentIndex={currentImage}
                 onClose={closeImageViewer}
                 disableScroll={false}

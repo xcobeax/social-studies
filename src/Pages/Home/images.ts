@@ -1,55 +1,55 @@
 export const images = [
     {
         id: 1,
-        image: "https://social-studies.masuk.id/assets/img/galeri/galeri(id1).jpg",
+        image: "monas.jpg",
         desc: "Monas Monument",
         country: "INDONESIA"
     },
     {
-        id: 1,
-        image: "https://social-studies.masuk.id/assets/img/galeri/galeri(id2).jpg",
+        id: 2,
+        image: "fatahilah.jpg",
         desc: "Fatahillah Park",
         country: "INDONESIA"
     },
     {
-        id: 1,
-        image: "https://social-studies.masuk.id/assets/img/galeri/galeri(id3).jpg",
+        id: 3,
+        image: "national.jpg",
         desc: "National Museum",
         country: "INDONESIA"
     },
     {
-        id: 1,
-        image: "https://social-studies.masuk.id/assets/img/galeri/galeri(lb1).jpg",
+        id: 4,
+        image: "nalut.jpg",
         desc: "Nalut Dinosaur Museum",
         country: "LIBYA"
     },
     {
-        id: 1,
-        image: "https://social-studies.masuk.id/assets/img/galeri/galeri(lb2).jpg",
+        id: 5,
+        image: "museumoflibya.jpg",
         desc: "Museum of Libya",
         country: "LIBYA"
     },
     {
-        id: 1,
-        image: "https://social-studies.masuk.id/assets/img/galeri/galeri(lb3).jpg",
+        id: 6,
+        image: "libyacity.jpg",
         desc: "Libya City",
         country: "LIBYA"
     },
     {
-        id: 1,
-        image: "https://social-studies.masuk.id/assets/img/galeri/galeri(fn1).jpg",
+        id: 7,
+        image: "artmuseum.jpg",
         desc: "Sinebrychoff Art Museum",
         country: "FINLANDIA"
     },
     {
-        id: 1,
-        image: "https://social-studies.masuk.id/assets/img/galeri/galeri(fn2).jpg",
+        id: 8,
+        image: "gustaf.jpg",
         desc: "Serlachius Museums Gustaf",
         country: "FINLANDIA"
     },
     {
-        id: 1,
-        image: "https://social-studies.masuk.id/assets/img/galeri/galeri(fn3).jpg",
+        id: 9,
+        image: "finland.jpg",
         desc: "Finland City",
         country: "FINLANDIA"
     }

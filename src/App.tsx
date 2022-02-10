@@ -7,7 +7,10 @@ import About from "./Pages/About";
 import Home from "./Pages/Home";
 import SslFinlandia from "./Pages/SslFinlandia";
 import SslIndonesia from "./Pages/SslIndonesia";
+import DetailPage from "./Pages/SslIndonesia/detail";
+import PdfPage from "./Pages/SslIndonesia/pdf";
 import SslLibya from "./Pages/SslLibya";
+import ScrollToTop from "./Utils/scrollToTop";
 
 const routes = [
   {
@@ -35,6 +38,12 @@ const routes = [
     path: "/ssl-indonesia",
   },
   {
+    id: 6,
+    name: "SSL Indonesia",
+    component: <DetailPage />,
+    path: "/ssl-indonesia/:id",
+  },
+  {
     id: 4,
     name: "SSL Libya",
     component: <SslLibya />,
@@ -46,21 +55,35 @@ const routes = [
     component: <SslFinlandia />,
     path: "/ssl-finlandia",
   },
+  {
+    id: 7,
+    name: "SSL Indonesia PDF",
+    component: <PdfPage />,
+    path: "/ssl-indonesia/pdf",
+  },
 ];
 
-const App: React.FC = ({ children }) => {
+const App: React.FC = () => {
   return (
-    <BrowserRouter>
-      <div className="top-0 z-30 fixed w-full">
-        <Header />
-      </div>
-      <Routes>
-        {routes.map((route) => (
-          <Route key={route.id} path={route.path} element={route.component} />
-        ))}
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <div className="min-h-screen flex flex-col">
+      <BrowserRouter>
+      <ScrollToTop />
+      <Header />
+
+        <div className="flex-1 flex">
+          <Routes>
+            {routes.map((route) => (
+              <Route
+                key={route.id}
+                path={route.path}
+                element={route.component}
+              />
+            ))}
+          </Routes>
+        </div>
+        <Footer />
+      </BrowserRouter>
+    </div>
   );
 };
 

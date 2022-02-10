@@ -1,0 +1,40 @@
+{
+    "parent":[
+        {
+            "id":1,
+            "title":"Social Studies Lessons (Indonesia)",
+            "imageUrl":"https://social-studies.masuk.id/assets/img/indonesia/bag1/indopict(1).jpg",
+            "description":"The National Atlas is a page built by the Center for Spatial Mapping and the Atlas of the Geospatial Information Agency in order to introduce and interactively inform the public about the profile of Indonesia's territory."
+        },
+        {
+            "id":2,
+            "title":"Virtual Museum Tour",
+            "imageUrl":"https://social-studies.masuk.id/assets/img/indonesia/bag2/indopict(1).jpg",
+            "description":"Before seeing the museums in Indonesia, it is better to explore the Indonesia Virtual Tour, so that you will love Indonesia more with the various beauties that exist in Indonesia."
+        },
+        {
+            "id":3,
+            "title":"Virtual Field Trip",
+            "imageUrl":"https://social-studies.masuk.id/assets/img/gearth.png",
+            "description":"Go beyond the classroom walls and explore some of Indonesia's most iconic destinations, no permit slip required. Check out fantastic behind-the-scenes videos and stories. Then, be sure to check out the list of great activities and knowledge additions."
+        },
+        {
+            "id":4,
+            "title":"Games and Simulation",
+            "imageUrl":"https://social-studies.masuk.id/assets/img/game.png",
+            "description":"You'll find everything from social lessons to teamwork and feelings in this collection of excellent games that vary in difficulty. The site's website is literally filled with some of the best educational games."
+        }
+    ],
+    "children":[
+        {
+            "id":1,
+            "groupId":1,
+            "title":"Panorama of Indonesia",
+            "imageUrl":"https://social-studies.masuk.id/assets/img/indonesia/bag1/indopict(1).jpg",
+            "description":"The National Atlas is a page built by the Center for Spatial Mapping and the Atlas‚ of the Geospatial Information Agency in order to introduce and interactively inform the public about the profile of Indonesia's territory. This Atlas of Classical Indonesian History (Hindu-Buddhist) contains an overview of the long historical process, which was then accepted by foreign cultures, then assimilated with the local culture and finally developed and manifested a distinctive culture.",
+            "url":["https://www.panorama-destination.com/", "https://atlas.big.go.id/eatlas1/"],
+            "file":"https://social-studies.masuk.id/assets/atlas.pdf",
+            "labelName":"Atlas of Classical Indonesian History (Hindu-Buddhist)"
+        }
+    ]
+}

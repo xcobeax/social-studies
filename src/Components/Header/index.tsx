@@ -15,7 +15,7 @@ const Header = () => {
   const route = useLocation();
   const { t } = useTranslation();
   return (
-    <div className="w-full overflow-hidden top-0 shadow-md py-3 px-28 border-b border-gray-300 bg-white flex justify-between items-center">
+    <div className="w-full sticky top-0 z-40 shadow-md py-3 px-28 border-b border-gray-300 bg-white flex justify-between items-center">
       <div className="text-3xl font-medium tracking-wide">{t("title")}</div>
       <div className="flex gap-x-10 font-medium text-gray-600">
         <Link to={"/"}>
