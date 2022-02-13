@@ -27,15 +27,6 @@ const Header = () => {
             {t('home')}
           </div>
         </Link>
-        {/* <Link to={"/about"}>
-          <div
-            className={`cursor-pointer ${
-              route.pathname === "/about" ? "text-green-600" : "text-gray-700"
-            } hover:text-green-600 transition-all duration-500 hover:shadow-lg`}
-          >
-            {t('about')}
-          </div>
-        </Link> */}
         <div onMouseLeave={() => setIsOpenSsl(false)}>
           <div
             onMouseEnter={() => setIsOpenSsl(true)}

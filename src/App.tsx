@@ -3,13 +3,14 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import NotFound from "./Pages/404";
-import About from "./Pages/About";
 import Home from "./Pages/Home";
 import SslFinlandia from "./Pages/SslFinlandia";
 import SslIndonesia from "./Pages/SslIndonesia";
 import DetailPage from "./Pages/SslIndonesia/detail";
 import PdfPage from "./Pages/SslIndonesia/pdf";
 import SslLibya from "./Pages/SslLibya";
+import SslLibyaDetail from "./Pages/SslLibya/detail";
+import SsliFinladDetail from "./Pages/SslFinlandia/detail";
 import ScrollToTop from "./Utils/scrollToTop";
 
 const routes = [
@@ -24,12 +25,6 @@ const routes = [
     name: "Index",
     component: <Home />,
     path: "/",
-  },
-  {
-    id: 2,
-    name: "About",
-    component: <About />,
-    path: "/about",
   },
   {
     id: 3,
@@ -48,6 +43,18 @@ const routes = [
     name: "SSL Libya",
     component: <SslLibya />,
     path: "/ssl-libya",
+  },
+  {
+    id: 8,
+    name: "SSL Libya Detail",
+    component: <SslLibyaDetail />,
+    path: "/ssl-libya/:id",
+  },
+  {
+    id: 9,
+    name: "SSL Finlad Detail",
+    component: <SsliFinladDetail />,
+    path: "/ssl-finlandia/:id",
   },
   {
     id: 5,
