@@ -9,11 +9,11 @@ const SslLDetail = () => {
 
   if (params.id === "1") {
     return (
-      <div className="w-full px-28 py-8">
+      <div className="w-full px-4 lg:px-28 py-4 lg:py-8">
         <SslDetail
           title={t("lib_panorama")}
           description={t("lib_panorama_desc")}
-          imageUrl={require("../../Assets/libyacity.jpg")}
+          videoUrl="https://www.youtube.com/embed/nuJ6QTZdvxM"
           url={[
             "https://www.europa.uk.com/global-1000-atlas/map/?pid=119473",
             "https://globalwindatlas.info/area/Libya",
@@ -39,7 +39,7 @@ const SslLDetail = () => {
 
   if (params.id === "2") {
     return (
-      <div className="w-full px-28 py-8">
+      <div className="w-full lg:px-28 lg:py-8">
         <SslDetail
           title={t("leebia")}
           description={t("leebia_desc")}
@@ -163,7 +163,7 @@ const SslLDetail = () => {
 
   if (params.id === "3") {
     return (
-      <div className="w-full px-28 py-8">
+      <div className="w-full lg:px-28 lg:py-8">
         <SslDetail
           title={t("l_tour")}
           description={t("l_tour_desc")}

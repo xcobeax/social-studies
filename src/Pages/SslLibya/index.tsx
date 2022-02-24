@@ -20,8 +20,8 @@ const SslLibya = () => {
       {/* header */}
       <SslHeader title={t("ssll_title")} desc={t("ssli_desc")} />
 
-      <div className="px-28 grid grid-cols-5 grid-flow-col py-12 gap-x-8">
-        <div className="col-span-3 space-y-8">
+      <div className="px-4 lg:px-28 lg:grid lg:grid-cols-5 grid-flow-col py-4 lg:py-12 gap-x-8">
+        <div className="lg:col-span-3 space-y-8">
           <Ssl
             onClickReadMore={onClickReadMore}
             id={1}

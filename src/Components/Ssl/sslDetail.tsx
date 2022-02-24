@@ -12,9 +12,9 @@ const SslDetail = ({
 }: any) => {
   const location = useNavigate();
   return (
-    <div className="w-full grid grid-cols-2 grid-flow-col py-12 gap-x-8">
+    <div className="w-full lg:grid lg:grid-cols-2 lg:grid-flow-col lg:py-12 lg:gap-x-8">
       {/* kiri */}
-      <div className="col-span-1 p-4">
+      <div className="lg:col-span-1 p-4">
         {imageUrl && <img src={imageUrl} className="w-full" alt={`img`} />}
         {videoUrl && (
           <div
@@ -57,14 +57,14 @@ const SslDetail = ({
       </div>
 
       {/* kanan */}
-      <div className="col-span-1 p-4">
+      <div className="lg:col-span-1 p-4">
         <div className="text-2xl font-semibold text-center pb-3">{title}</div>
         <div className="text=[#444444] pb-3">{description}</div>
         {file && (
           <div className="w-full flex justify-end">
             <button
               onClick={() => location("/ssl-indonesia/pdf")}
-              className="bg-[#94c045] px-4 rounded-md py-1 text-white"
+              className="bg-[#94c045] text-sm lg:text-base px-4 rounded-md py-1 text-white"
             >
               {label}
             </button>

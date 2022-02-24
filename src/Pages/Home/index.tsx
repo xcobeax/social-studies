@@ -42,31 +42,31 @@ const Home: React.FC = () => {
     <div className="w-full flex flex-col">
       {/* section 1 */}
       <div
-        className="w-full flex flex-col justify-center text-center space-y-8 py-[9rem]"
+        className="w-full flex flex-col justify-center text-center space-y-4 lg:space-y-8 lg:py-[9rem] py-10"
         style={styles}
       >
         <div className="w-full flex justify-center">
-          <h1 className="text-5xl text-white font-semibold w-2/3">
+          <h1 className="text-3xl lg:text-5xl text-white font-semibold w-3/4 lg:w-2/3">
             {t("home_main_title")}
           </h1>
         </div>
         <div id="section2">
           <button
             onClick={handleGetStrarted}
-            className="rounded-full px-10 py-2 font-medium text-white border border-[#9cce46]"
+            className="rounded-full text-base px-4 py-1 lg:px-10 lg:py-2 font-medium text-white border border-[#9cce46]"
           >
             {t("get_started")}
           </button>
         </div>
       </div>
       {/* section 2 */}
-      <div className="flex items-center space-y-7 flex-col mx-28 -mt-14 bg-white p-10 shadow-lg text-center mb-16">
-        <div className="text-4xl w-2/3 text-[#646c55]">{t("home_title")}</div>
-        <div className="text-lg text-[#646c55]">{t("home_content")}</div>
+      <div className="flex items-center lg:space-y-7 flex-col mx-6 lg:mx-28 -mt-6 lg:-mt-14 bg-white p-6 lg:p-10 shadow-lg text-center mb-6 lg:mb-16">
+        <div className="text-lg w-full lg:text-4xl lg:w-2/3 text-[#646c55]">{t("home_title")}</div>
+        <div className="text-base lg:text-lg text-[#646c55]">{t("home_content")}</div>
       </div>
       {/* section 3 */}
-      <div className="w-full bg-[#86b03c] text-white flex flex-col items-center p-10 space-y-4 mb-16">
-        <div className="text-3xl tracking-wide font-semibold">
+      <div className="w-full bg-[#86b03c] text-white flex flex-col items-center p-6 lg:p-10 space-y-4 mb-6 lg:mb-16">
+        <div className="text-xl lg:text-3xl tracking-wide font-semibold">
           {t("home_sub_title")}
         </div>
         <div>{t("home_sub_content")}</div>
@@ -77,15 +77,15 @@ const Home: React.FC = () => {
         </div>
       </div>
       {/* section 4 */}
-      <div className="mx-28 text-[#646c55] flex flex-col mb-16 cursor-default">
-        <div className="text-4xl font-semibold text-center">
+      <div className="mx-6 lg:mx-28 text-[#646c55] flex flex-col mb-6 lg:mb-16 cursor-default">
+        <div className="text-2xl lg:text-4xl font-semibold text-center">
           {t("about_title")}
         </div>
-        <div className="flex space-x-10 items-center">
-          <div className="w-1/3 shadow-lg p-6 hover:-translate-y-2 duration-300">
+        <div className="flex lg:flex-row flex-col lg:space-x-10 items-center">
+          <div className="w-1/2 lg:w-1/3 shadow-lg p-6 hover:-translate-y-2 duration-300">
             <img src={Logo} alt="ina" />
           </div>
-          <div className="flex flex-col w-2/3 space-y-10">
+          <div className="flex flex-col w-full space-y-10">
             <div className="shadow-lg p-6 text-center hover:-translate-y-2 duration-300">
               <div className="text-[#94c045] text-xl">
                 {t("about_content_1")}
@@ -102,10 +102,10 @@ const Home: React.FC = () => {
         </div>
       </div>
       {/* section 5 */}
-      <div className="mx-28 text-[#646c55] flex flex-col mb-16 space-y-8">
+      <div className="mx-6 lg:mx-28 text-[#646c55] flex flex-col mb-6 lg:mb-16 space-y-8">
         <div className="text-4xl font-semibold text-center">{t("gallery")}</div>
 
-        <div className="grid grid-cols-3 grid-flow-row gap-5">
+        <div className="grid grid-cols-2 lg:grid-cols-3 grid-flow-row gap-5">
           {images.map((e, index) => (
             <div
               onClick={() => openImageViewer(index)}
@@ -115,7 +115,7 @@ const Home: React.FC = () => {
               <img src={require(`../../Assets/${e.image}`)} alt={`img-${e.id}`} />
               <div className="absolute inset-0 bg-black bg-opacity-10">
                 <div className="text-white bg-gray-600 bg-opacity-50 p-2 bottom-0 w-full absolute">
-                  <div className="text-sm text-gray-200 tracking-wide">
+                  <div className="text-xs lg:text-sm text-gray-200 tracking-wide">
                     {e.desc}
                   </div>
                   <div className="italic text-gray-300 font-medium tracking-wide text-xs">

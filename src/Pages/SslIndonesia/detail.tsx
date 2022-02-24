@@ -10,7 +10,7 @@ const DetailPage = () => {
 
   if (params.id === "1") {
     return (
-      <div className="w-full px-28 py-8">
+      <div className="w-full px-4 lg:px-28 py-4 lg:py-8">
         <SslDetail
           title={t("ssli_panorama")}
           description={t("ssli_panorama_desc")}
@@ -40,7 +40,7 @@ const DetailPage = () => {
 
   if (params.id === "2") {
     return (
-      <div className="w-full px-28 py-8">
+      <div className="w-full lg:px-28 lg:py-8">
         <SslDetail
           title={t("monas")}
           description={t("monas_desc")}
@@ -76,7 +76,7 @@ const DetailPage = () => {
 
   if (params.id === "3") {
     return (
-      <div className="w-full px-28 py-8">
+      <div className="w-full lg:px-28 lg:py-8">
         <SslDetail
           title={t("ragunan")}
           description={t("ragunan_desc")}
